@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Stay Subscription</title>
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/lightbox.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,500,900&amp;subset=japanese" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/jquery.inview.min.js"></script>
+    <script src="js/lightbox.js"></script>
+</head>
+
+<body>
+    <section class="hero fd-in" id="hero">
+        <h1>TRAVEL STAY SUBSCRIPTION</h1>
+        <p>Travel Freely and Easily </p>
+        <a href="">TRY NOW</a>
+    </section>
+    <section class="about fd-in" id="about">
+        <h2 class="section__title">
+            About
+        </h2>
+        <p class="section__title--discription">Our Service</p>
+        <div class="about__container">
+            <div class="about__image">
+                <img src="images/about.jpg" alt="aboutimage">
+            </div>
+            <div class="about__text">
+                <p>We serve you a travel pass that let you book stays around the world without paying nightly rates, taxes, or fees.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="point fd-in" id="point">
+        <h2 class="section__title">
+            Point
+        </h2>
+        <p class="section__title--discription">Benefits</p>
+        <ol class="point__list">
+            <li class="point__item">
+                <i>1</i>
+                <p>Refresh yourself with regularly travel stays.</p>
+            </li>
+            <li class="point__item">
+                <i>2</i>
+                <p>Free to decide how long and how often you stay. The more you stay, more coins you will get and redeme them for luxuary hotel stays. </p>
+            </li>
+            <li class="point__item">
+                <i>3</i>
+                <p>Vairous stay choices such as guest houses, resort hotels, ryokan hotels, casual hotels and luxuary hotels. </p>
+            </li>
+        </ol>
+    </section>
+    <section class="gallery fd-in" id="gallery">
+        <h2 class="section__title">
+            Gallery
+        </h2>
+        <p class="section__title--discription">Hotels</p>
+        <ul class="gallery__list">
+            <li class="gallery__item"><a class="image-link" href="images/1.png" data-lightbox="image-set"
+                    data-title="image1"><img src="images/1.png" alt="HotelImage1"></a></li>
+            <li class="gallery__item"><a class="image-link" href="images/2.png" data-lightbox="image-set"
+                    data-title="image2"><img src="images/2.png" alt="HotelImage2"></a></li>
+            <li class="gallery__item"><a class="image-link" href="images/3.png" data-lightbox="image-set"
+                    data-title="image3"><img src="images/3.png" alt="HotelImage3"></a></li>
+            <li class="gallery__item"><a class="image-link" href="images/4.png" data-lightbox="image-set"
+                    data-title="image4"><img src="images/4.png" alt="HotelImage4"></a></li>
+            <li class="gallery__item"><a class="image-link" href="images/5.png" data-lightbox="image-set"
+                    data-title="image5"><img src="images/5.png" alt="HotelImage5"></a></li>
+            <li class="gallery__item"><a class="image-link" href="images/6.png" data-lightbox="image-set"
+                    data-title="image6"><img src="images/6.png" alt="HotelImage6"></a></li>
+        </ul>
+        </section>
+        <section class="price fd-in" id="price">
+            <h2 class="section__title">
+                Price
+            </h2>
+            <p class="section__title--discription">Monthly</p>
+            <ul class="price__list">
+                <li class="price__item">
+                    <h3>Standard</h3>
+                    <p class="yen">100.00<span>CAD</span></p>
+                    <div class="cando">
+                        <ol>
+                            <li>3 stays</li>
+                            <li>100 hotels choices</li>
+                            <li>Free welcome drink</li>
+                            </ol>
+                            </div>
+                            </li>
+                            <li class="price__item">
+                                <h3>Premium</h3>
+                                <p class="yen">300.00<span>CAD</span></p>
+                                <div class="cando">
+                                    <ol>
+                                        <li>10 stays</li>
+                                        <li>120 hotels choices</li>
+                                        <li>Free welcome drink and<br>hot meal for breakfast</li>
+                                    </ol>
+                                </div>
+                            </li>
+                            </ul>
+                            </section>
+                            <section class="cta fd-in" id="cta">
+                                <h2 class="section__title">
+                                    Let's Travel Now!
+                                </h2>
+                                <p class="section__title--discription">Travel stay pass</p>
+                                <div class="cta__btn">
+                                    <a href="">TRY NOW</a>
+                                </div>
+                            </section>
+
+                            <footer>
+                                <small>&copy; 2022 REINA KABA</small>
+                            </footer>
+
+                            <script>
+                                $(function () {
+                                    $('.fd-in').on('inview', function (event, isInView, visiblePartX, visiblePartY) {
+                                        if (isInView) {
+                                            $(this).stop().addClass('fd-done');
+                                        } else {
+                                            $(this).stop().removeClass('fd-done');
+                                        }
+                                    });
+                                });
+                            </script>
+</body>
+</html>
