@@ -20,6 +20,7 @@
         <p>Travel Freely and Easily </p>
         <a href="">TRY NOW</a>
     </section>
+    
     <section class="about fd-in" id="about">
         <h2 class="section__title">
             About
@@ -35,6 +36,7 @@
             </div>
         </div>
     </section>
+
     <section class="point fd-in" id="point">
         <h2 class="section__title">
             Point
@@ -55,6 +57,7 @@
             </li>
         </ol>
     </section>
+
     <section class="gallery fd-in" id="gallery">
         <h2 class="section__title">
             Gallery
@@ -74,61 +77,63 @@
             <li class="gallery__item"><a class="image-link" href="images/6.png" data-lightbox="image-set"
                     data-title="image6"><img src="images/6.png" alt="HotelImage6"></a></li>
         </ul>
-        </section>
-        <section class="price fd-in" id="price">
-            <h2 class="section__title">
-                Price
-            </h2>
-            <p class="section__title--discription">Monthly</p>
-            <ul class="price__list">
-                <li class="price__item">
-                    <h3>Standard</h3>
-                    <p class="yen">100.00<span>CAD</span></p>
-                    <div class="cando">
-                        <ol>
-                            <li>3 stays</li>
-                            <li>100 hotels choices</li>
-                            <li>Free welcome drink</li>
-                            </ol>
-                            </div>
-                            </li>
-                            <li class="price__item">
-                                <h3>Premium</h3>
-                                <p class="yen">300.00<span>CAD</span></p>
-                                <div class="cando">
-                                    <ol>
-                                        <li>10 stays</li>
-                                        <li>120 hotels choices</li>
-                                        <li>Free welcome drink and<br>hot meal for breakfast</li>
-                                    </ol>
-                                </div>
-                            </li>
-                            </ul>
-                            </section>
-                            <section class="cta fd-in" id="cta">
-                                <h2 class="section__title">
-                                    Let's Travel Now!
-                                </h2>
-                                <p class="section__title--discription">Travel stay pass</p>
-                                <div class="cta__btn">
-                                    <a href="">TRY NOW</a>
-                                </div>
-                            </section>
+    </section>
 
-                            <footer>
-                                <small>&copy; 2022 REINA KABA</small>
-                            </footer>
+    <section class="price fd-in" id="price">
+        <h2 class="section__title">
+            Price
+        </h2>
+        <p class="section__title--discription">Monthly</p>
+        <ul class="price__list">
+            <li class="price__item">
+                <h3>Standard</h3>
+                <p class="yen">100.00<span>CAD</span></p>
+                <div class="cando">
+                    <ol>
+                        <li>3 stays</li>
+                        <li>100 hotels choices</li>
+                        <li>Free welcome drink</li>
+                    </ol>
+                </div>
+            </li>
+            <li class="price__item">
+                <h3>Premium</h3>
+                <p class="yen">300.00<span>CAD</span></p>
+                <div class="cando">
+                    <ol>
+                        <li>10 stays</li>
+                        <li>120 hotels choices</li>
+                        <li>Free welcome drink and<br>hot meal for breakfast</li>
+                    </ol>
+                </div>
+            </li>
+        </ul>
+    </section>
 
-                            <script>
-                                $(function () {
-                                    $('.fd-in').on('inview', function (event, isInView, visiblePartX, visiblePartY) {
-                                        if (isInView) {
-                                            $(this).stop().addClass('fd-done');
-                                        } else {
-                                            $(this).stop().removeClass('fd-done');
-                                        }
-                                    });
-                                });
-                            </script>
-</body>
+    <section class="cta fd-in" id="cta">
+        <h2 class="section__title">
+            Let's Travel Now!
+        </h2>
+        <p class="section__title--discription">Travel stay pass</p>
+        <div class="cta__btn">
+            <a href="">TRY NOW</a>
+        </div>
+    </section>
+
+    <footer>
+        <small>&copy; 2022 REINA KABA</small>
+    </footer>
+
+    <script>
+        $(function () {
+            $('.fd-in').on('inview', function (event, isInView, visiblePartX, visiblePartY) {
+                if (isInView) {
+                    $(this).stop().addClass('fd-done');
+                } else {
+                    $(this).stop().removeClass('fd-done');
+                }
+            });
+        });
+    </script>
+    </body>
 </html>
